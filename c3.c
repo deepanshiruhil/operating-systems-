@@ -6,7 +6,7 @@ int n3;
 bool task_is_done = false;
 bool can_run = false;
 
-// This is our main task thread.
+// This is the main task thread.
 void* task(void* vargp) 
 {
 // If shared memory is not 1, put task thread to sleep until monitor thread signals to continue.
