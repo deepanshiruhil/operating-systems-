@@ -9,6 +9,7 @@ bool can_run = false;
 // This is the main task thread.
 void* task(void* vargp) 
 {
+	
 // If shared memory is not 1, put task thread to sleep until monitor thread signals to continue.
     pthread_mutex_lock(&mutex_shm);
     if(can_run == false) 
