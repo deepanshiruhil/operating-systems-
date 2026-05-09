@@ -7,7 +7,6 @@ int get_shared_block(char *filename, int size)
 //request a key
 //the key is linked to a filename, so that other programs can access it.
 //rhe file MUST exist+ also be accessible.
-    
     key_t key = ftok(filename, 0);
     if (key == FAILURE) 
     {
